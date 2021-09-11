@@ -13,8 +13,10 @@ struct ContentView: View {
     
     @GestureState private var dragStyle = DragStyle.none
     
+    @State private var lastCardIdx = 1
+    
     //Variable de mazo = deck
-    var deck : [cardView] = {
+    @State var deck : [cardView] = {
         var cards = [cardView]()
         
         for idx in 0..<2{
@@ -35,17 +37,16 @@ struct ContentView: View {
                         .overlay(
                             ZStack{
                                 //Aparece animacion de que hizo el suuario si cancelar o darle like
-                                Image("cancel")
-                                    .background(Color.red)
+                                Image("boton-x-2")
                                     .foregroundColor(.black)
-                                    .font(.system(size: 120))
+                                    .font(.system(size: 80))
                                     .opacity(self.dragStyle.translation.width <
                                                 -self.threshold && self.isTopCard(card: card) ? 1: 0)
                                 
                                 
-                                Image("item")
+                                Image("heart-3")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 120))
+                                    .font(.system(size: 20))
                                     .opacity(self.dragStyle.translation.width > self.threshold && self.isTopCard(card: card) ? 1 : 0)
                                 
                             }
@@ -69,8 +70,19 @@ struct ContentView: View {
                              }
                             
                           })
+                        .onEnded{ (value) in
+                            guard case .second(true, let drag?) = value else {
+                                return
+                            }
+                            
+                            if drag.translation.width > self.threshold ||
+                               drag.translation.width < -self.threshold{
+                                //ACtualicación: Marcar el curso como x o como corazón//
+                                self.updateDeck()
+                            }
+                        }
                         
-                        )
+                    )
                 }
                 
             }
@@ -89,6 +101,18 @@ struct ContentView: View {
             return false
         }
         return idx == 0
+    }
+    
+    private func updateDeck(){
+        // elimino la ultima carta//
+        deck.removeFirst()
+        //agrego la otra carta//
+        self.lastCardIdx += 1
+        
+        let newPerson = persons[self.lastCardIdx % persons.count]
+        let newCardView = cardView(person: newPerson)
+        
+        deck.append(newCardView)
     }
 }
 
