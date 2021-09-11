@@ -15,7 +15,10 @@ struct person {
 
 #if DEBUG
 var persons: [person] = [
-    person(name: "AriGameplays", image: "ari2")
+    person(name: "Isaac López", image: "isaac"),//ari2
+    person(name: "AronPlay", image: "auron"),
+    person(name: "AriGameplays", image: "ari3"),
+    person(name: "AriGameplays", image: "ari4")
 ]
 
 #endif

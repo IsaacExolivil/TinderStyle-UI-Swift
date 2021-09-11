@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C69FB70526ED5B2E00BA0CEC /* DragStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69FB70426ED5B2E00BA0CEC /* DragStyle.swift */; };
 		C6A5691526EC8448008DAF9A /* TinderStyleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5691426EC8448008DAF9A /* TinderStyleApp.swift */; };
 		C6A5691726EC8448008DAF9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5691626EC8448008DAF9A /* ContentView.swift */; };
 		C6A5691926EC844F008DAF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A5691826EC844F008DAF9A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C69FB70426ED5B2E00BA0CEC /* DragStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragStyle.swift; sourceTree = "<group>"; };
 		C6A5691126EC8448008DAF9A /* TinderStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A5691426EC8448008DAF9A /* TinderStyleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderStyleApp.swift; sourceTree = "<group>"; };
 		C6A5691626EC8448008DAF9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C6A5691A26EC844F008DAF9A /* Preview Content */,
 				C6A5692526EC85FB008DAF9A /* cardView.swift */,
 				C6A5692326EC8486008DAF9A /* course.swift */,
+				C69FB70426ED5B2E00BA0CEC /* DragStyle.swift */,
 			);
 			path = TinderStyle;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				C6A5692426EC8486008DAF9A /* course.swift in Sources */,
 				C6A5691726EC8448008DAF9A /* ContentView.swift in Sources */,
 				C6A5692626EC85FB008DAF9A /* cardView.swift in Sources */,
+				C69FB70526ED5B2E00BA0CEC /* DragStyle.swift in Sources */,
 				C6A5691526EC8448008DAF9A /* TinderStyleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
