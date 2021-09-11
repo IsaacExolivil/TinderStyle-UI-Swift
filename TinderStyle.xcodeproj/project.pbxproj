@@ -11,6 +11,8 @@
 		C6A5691726EC8448008DAF9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5691626EC8448008DAF9A /* ContentView.swift */; };
 		C6A5691926EC844F008DAF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A5691826EC844F008DAF9A /* Assets.xcassets */; };
 		C6A5691C26EC844F008DAF9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A5691B26EC844F008DAF9A /* Preview Assets.xcassets */; };
+		C6A5692426EC8486008DAF9A /* course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5692326EC8486008DAF9A /* course.swift */; };
+		C6A5692626EC85FB008DAF9A /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5692526EC85FB008DAF9A /* cardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		C6A5691826EC844F008DAF9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6A5691B26EC844F008DAF9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6A5691D26EC844F008DAF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A5692326EC8486008DAF9A /* course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = course.swift; sourceTree = "<group>"; };
+		C6A5692526EC85FB008DAF9A /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				C6A5691826EC844F008DAF9A /* Assets.xcassets */,
 				C6A5691D26EC844F008DAF9A /* Info.plist */,
 				C6A5691A26EC844F008DAF9A /* Preview Content */,
+				C6A5692526EC85FB008DAF9A /* cardView.swift */,
+				C6A5692326EC8486008DAF9A /* course.swift */,
 			);
 			path = TinderStyle;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A5692426EC8486008DAF9A /* course.swift in Sources */,
 				C6A5691726EC8448008DAF9A /* ContentView.swift in Sources */,
+				C6A5692626EC85FB008DAF9A /* cardView.swift in Sources */,
 				C6A5691526EC8448008DAF9A /* TinderStyleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
